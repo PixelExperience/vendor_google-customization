@@ -15,8 +15,15 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/google-customization/interfaces/wifi_ext/wifi-ext_base.mk)
+WIFI_EXT_PATH := vendor/google-customization/interfaces/wifi_ext
+
+DEVICE_MANIFEST_FILE += $(WIFI_EXT_PATH)/manifest.xml
 
 # HIDL HAL
 PRODUCT_PACKAGES += \
-    vendor.google.wifi_ext@1.0-service-vendor
+    vendor.google.wifi_ext@1.0 \
+    libwifi-pex
+
+# GCS App
+PRODUCT_PACKAGES += \
+    GCS

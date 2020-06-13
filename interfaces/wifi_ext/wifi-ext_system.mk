@@ -19,4 +19,4 @@ $(call inherit-product, vendor/google-customization/interfaces/wifi_ext/wifi-ext
 
 # HIDL HAL
 PRODUCT_PACKAGES += \
-    vendor.google.wifi_ext@1.0-service-vendor
+    google.wifi_ext@1.0-service

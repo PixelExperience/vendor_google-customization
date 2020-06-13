@@ -16,6 +16,10 @@
 
 ifeq ($(TARGET_INCLUDE_WIFI_EXT),true)
 $(call inherit-product, vendor/google-customization/interfaces/wifi_ext/wifi-ext.mk)
+else 
+ifeq ($(TARGET_INCLUDE_SYSTEM_WIFI_EXT),true)
+$(call inherit-product, vendor/google-customization/interfaces/wifi_ext/wifi-ext_system.mk)
+endif
 endif
 
 ifeq ($(TARGET_FLATTEN_APEX),false)
