@@ -21,7 +21,7 @@ DEVICE_MANIFEST_FILE += $(WIFI_EXT_PATH)/manifest.xml
 
 # HIDL HAL
 PRODUCT_PACKAGES += \
-    vendor.google.wifi_ext@1.0-service-vendor
+    google.wifi_ext@1.0-service
 
 # GCS App
 PRODUCT_PACKAGES += \
